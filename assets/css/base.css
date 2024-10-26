@@ -1,3 +1,8 @@
+/*To make a differentiating between qoute and text even more obvious*/
+blockquote {
+  font-style: italic;
+}
+
 body {
 	/*To create a natural border for pictures with a white background, also I like the color*/
 	background-color: lightcyan;
@@ -7,6 +12,7 @@ body {
 		serif;
 	font-weight: normal;
 }
+
 /* only use if I want a PPP like layout
 h1,
 h2,
