@@ -1,0 +1,53 @@
+
+befor,
+after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	max-width: 66ch;
+	margin: 0 auto;
+	line-height: 1.5;
+	font-size: 120%;
+}
+
+blockquote {
+	font-style: italic;
+  }
+  
+  body {
+	  background-color: lightblue;
+  
+	  font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
+		  serif;
+	  font-weight: normal;
+  }
+  
+  a:hover {
+	  color: darkblue;
+  }
+
+html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-end;
+    }
