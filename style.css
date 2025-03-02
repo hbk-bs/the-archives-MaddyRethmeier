@@ -1,18 +1,16 @@
 
-/*for a more natural look*/
 befor,
 after {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
-/* so that the images dont take over the full screen and are wildly scaled*/
 img {
 	display: block;
 	max-width: 100%;
 	height: auto;
 }
-/*like we talked about in class, these changes make the text and layout more accessible to more users... they just made sense*/
+
 body {
 	max-width: 66ch;
 	margin: 0 auto;
@@ -20,33 +18,36 @@ body {
 	font-size: 120%;
 }
 
-/*To make a differentiating between qoute and text even more obvious*/
 blockquote {
 	font-style: italic;
   }
   
   body {
-	  /*To create a natural border for pictures with a white background, also I like the color*/
 	  background-color: lightblue;
   
-	  /*I just really like the font... but obviously it has to be adjusted depending on the website I want to create..*/
 	  font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
 		  serif;
 	  font-weight: normal;
   }
   
-  /* only use if I want a PPP like layout
-  h1,
-  h2,
-  h3,
-  h4 {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-  }*/
-  
-  /*because I prefer my links to be displayed in dark blue if you hover above them (it is easier to see what you are selecting) ...*/
   a:hover {
 	  color: darkblue;
   }
-  
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+}
