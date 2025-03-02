@@ -1,66 +1,49 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <title>Blinkenlichten</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main>
+        <a class="goback" href="index.html">⬅︎</a>
+        <h2>Project:"Bau_n_Haus"</h2>
 
-		<title>Blinkenlichten</title>
-		<link rel="stylesheet" href="style.css" />  
-		 <style>
-			 .image-container {
-				 display: flex;           
-				 flex-wrap: wrap;        
-				 justify-content: center; 
-				 gap: 10px;              
-			 }
-	 
-			 .image-container img {
-				 max-width: 400 px; 
-				 height: auto;   
-			 }
-			 video {
-				max-width: 400 px; 
-				height: auto;    
-        		}
-		 </style>
-	</head>
-	<body>
-		
-		<main>
-			<a class="goback" href="index.html">⬅︎</a>
-			<h2>Project:"Bau_n_Haus"</h2>
-			
-			<h3>Ideenfindug</h3>
-			<p>Gruppenprojekt Stadt</p>
-			<h3>Elektronik</h3>
-			<p>Arduino Board</p>
-			<img src="https://hbk-bs.github.io/the-archives-MaddyRethmeier/BlinkenLichten/Mittel%20(Foto%20Board%20).jpeg" alt="Arduino Board">
-			<p>Motion Sensor</p>
-			<img src="https://hbk-bs.github.io/the-archives-MaddyRethmeier/BlinkenLichten/Mittel%20(Foto%20Motion%20sensor).jpeg" alt="Motion Sensor">
-			<p>Kabelsalat</p>
-			<img src="https://hbk-bs.github.io/the-archives-MaddyRethmeier/BlinkenLichten/Mittel%20(Foto%20Technik).jpeg" alt="Verkabelung">
-			<p>So haben wir gearbeitet</p>
-			
-			<h3>Analoge Arbeit</h3>
-			<p>Bauen der Häuser</p>
-			<img src="https://hbk-bs.github.io/the-archives-MaddyRethmeier/BlinkenLichten/Mittel%20(Foto%20Spray%20H%C3%A4user%20Zwischenstand).jpeg" alt="Sprayen">
-			<p>Reihung der Häuser</p>
-			<img src="https://hbk-bs.github.io/the-archives-MaddyRethmeier/BlinkenLichten/Mittel_(Foto_Aufbau_H%C3%A4user_roh).jpg" alt="Work in Progress">
-			<p>Leuchten der Häuser</p>
-			<img src="https://hbk-bs.github.io/the-archives-MaddyRethmeier/BlinkenLichten/Mittel%20(Foto%20H%C3%A4user%20LED%20overhead%20hell).jpeg" alt="Leuchtende Häuser">
+        <h3>Ideenfindug</h3>
+        <p>Gruppenprojekt Stadt</p>
+        <h3>Elektronik</h3>
+        <p>Arduino Board</p>
 
-			<h3>Video: Aufleuchten der Häuser</h3>
-			<p>Video 1</p>
-			<video src="https://hbk-bs.github.io/the-archives-MaddyRethmeier/BlinkenLichten/Video%20H%C3%A4user.mp4" autoplay="" muted="" loop=""></video>
+        <div class="image-container">
+            <img src="https://hbk-bs.github.io/the-archives-MaddyRethmeier/BlinkenLichten/Mittel%20(Foto%20Board%20).jpeg" alt="Arduino Board">
+            <p>Motion Sensor</p>
+            <img src="https://hbk-bs.github.io/the-archives-MaddyRethmeier/BlinkenLichten/Mittel%20(Foto%20Motion%20sensor).jpeg" alt="Motion Sensor">
+            <p>Kabelsalat</p>
+            <img src="https://hbk-bs.github.io/the-archives-MaddyRethmeier/BlinkenLichten/Mittel%20(Foto%20Technik).jpeg" alt="Verkabelung">
+            <p>So haben wir gearbeitet</p>
+            <h3>Analoge Arbeit</h3>
+            <p>Bauen der Häuser</p>
+            <img src="https://hbk-bs.github.io/the-archives-MaddyRethmeier/BlinkenLichten/Mittel%20(Foto%20Spray%20H%C3%A4user%20Zwischenstand).jpeg" alt="Sprayen">
+            <p>Reihung der Häuser</p>
+            <img src="https://hbk-bs.github.io/the-archives-MaddyRethmeier/BlinkenLichten/Mittel_(Foto_Aufbau_H%C3%A4user_roh).jpg" alt="Work in Progress">
+            <p>Leuchten der Häuser</p>
+            <img src="https://hbk-bs.github.io/the-archives-MaddyRethmeier/BlinkenLichten/Mittel%20(Foto%20H%C3%A4user%20LED%20overhead%20hell).jpeg" alt="Leuchtende Häuser">
+        </div>
 
-			<p>Video 2</p>
-			<video src="https://hbk-bs.github.io/the-archives-MaddyRethmeier/BlinkenLichten/Video%20H%C3%A4user%202.mp4" autoplay="" muted="" loop=""></video>
+        <h3>Video: Aufleuchten der Häuser</h3>
+        <p>Video 1</p>
+        <div class="image-container">
+            <video src="https://hbk-bs.github.io/the-archives-MaddyRethmeier/BlinkenLichten/Video%20H%C3%A4user.mp4" autoplay muted loop></video>
+            <p>Video 2</p>
+            <video src="https://hbk-bs.github.io/the-archives-MaddyRethmeier/BlinkenLichten/Video%20H%C3%A4user%202.mp4" autoplay muted loop></video>
+        </div>
 
-			
-			<h3>Code für das Leuchten der LEDs</h3>
-			<p>Das waren Probleme...</p>
-			<a href="Bau_n_Haus.html">Code für die LEDs</a>
-		</main>
-			
-	</body>
+        <h3>Code für das Leuchten der LEDs</h3>
+        <p>Das waren Probleme...</p>
+        <a href="Bau_n_Haus.html">Code für die LEDs</a>
+    </main>
+</body>
+</html>
