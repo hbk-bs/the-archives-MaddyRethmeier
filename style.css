@@ -1,4 +1,4 @@
-/* Reset für ::before und ::after */
+
 ::before,
 ::after {
     box-sizing: border-box;
@@ -6,7 +6,12 @@
     padding: 0;
 }
 
-/* Bild- und Video-Stile */
+img{
+    display: block;
+    max-width: 100%; 
+    height: auto;  
+}
+
 .image-container {
     display: flex;           
     flex-wrap: wrap;        
@@ -14,37 +19,35 @@
     gap: 10px;              
 }
 
-/* Bilder */
+
 .image-container img,
 .image-container video {
-    max-width: 100%; /* Maximale Breite auf 100% setzen */
-    height: auto;    /* Höhe automatisch anpassen */
-    border-radius: 5px; /* Abgerundete Ecken für Bilder und Videos */
+    max-width: 100%; 
+    height: auto;    
+    border-radius: 5px; 
 }
 
-/* Body-Stile */
 body {
-    max-width: 66ch; /* Maximale Breite */
-    margin: 0 auto; /* Zentrierter Inhalt */
-    line-height: 1.5; /* Zeilenhöhe */
-    font-size: 120%; /* Schriftgröße */
-    background-color: rgb(168, 220, 238); /* Hintergrundfarbe */
-    font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif; /* Schriftarten */
-    font-weight: normal; /* Schriftgewicht */
+    max-width: 66ch; 
+    margin: 0 auto; 
+    line-height: 1.5; 
+    font-size: 120%; 
+    background-color: rgb(168, 220, 238); 
+    font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
+    font-weight: normal; 
 }
 
-/* Box für den gesamten Inhalt */
 main {
 	margin-top: 40px;
-    background-color: rgb(194, 235, 255); /* Hintergrundfarbe der Box */
-    padding: 20px; /* Innenabstand */
-    border-radius: 10px; /* Abgerundete Ecken */
-    box-shadow: 0 4px 10px rgba(16, 1, 46, 0.1); /* Schatteneffekt */
-    width: 90%; /* Breite der Box */
-    max-width: 600px; /* Maximale Breite */
+    background-color: rgb(194, 235, 255); 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(16, 1, 46, 0.1); 
+    width: 90%; 
+    max-width: 600px;
 }
 
-/*Stil für die goback-class*/
+
 .goback {
 	text-decoration: none;
 	color: black;
@@ -52,40 +55,36 @@ main {
 }
 
 
-/* Stil für das h1 */
 h1 {
-    background-color: #6f82fd; /* Hintergrundfarbe des h1 */
-    padding: 15px; /* Innenabstand */
-    border-radius: 5px; /* Abgerundete Ecken */
-    text-align: center; /* Zentrierter Text */
-    margin-bottom: 20px; /* Abstand zum nächsten Element */
+    background-color: #6f82fd; 
+    padding: 15px; 
+    border-radius: 5px; 
+    text-align: center; 
+    margin-bottom: 20px;
 }
 
-/* Stil für das Blockzitat */
+
 blockquote {
-    font-style: italic; /* Kursivschrift */
+    font-style: italic; 
 }
 
-/* Stil für die Navigation */
 .nav {
-    background-color: #74d1ff; /* Hintergrundfarbe der Navigationsbox */
-    padding: 10px; /* Innenabstand */
-    border-radius: 5px; /* Abgerundete Ecken */
+    background-color: #74d1ff; 
+    padding: 10px; 
+    border-radius: 5px;
 }
 
-/* Stil für die Links */
 .nav a {
-    display: block; /* Links in eigene Zeilen */
-    text-decoration: none; /* Keine Unterstreichung */
-    color: #000000; /* Textfarbe */
-    padding: 10px; /* Innenabstand */
-    margin: 5px 0; /* Abstand zwischen den Links */
-    border-radius: 3px; /* Abgerundete Ecken */
-    transition: background-color 0.3s; /* Übergangseffekt für Hintergrundfarbe */
+    display: block; 
+    text-decoration: none; 
+    color: #000000; 
+    padding: 10px; 
+    margin: 5px 0; 
+    border-radius: 3px; 
+    transition: background-color 0.3s; 
 }
 
-/* Hover-Effekt für die Links */
 .nav a:hover {
-    background-color: #3c55f8; /* Hintergrundfarbe beim Hover */
-    color: darkblue; /* Textfarbe beim Hover */
+    background-color: #3c55f8; 
+    color: darkblue; 
 }
