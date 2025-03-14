@@ -89,3 +89,17 @@ blockquote {
     background-color: #3c55f8; 
     color: darkblue; 
 }
+
+footer {
+    background-color: rgb(169, 226, 254);
+    padding: 20px;
+    font-size: 0.8em;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(16, 1, 46, 0.1);
+    
+}
