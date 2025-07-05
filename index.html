@@ -5,14 +5,70 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
-		<title>{the archive}</title>
-		<link rel="stylesheet" href="style.css" />
+		<title>{the archive of madeleine rethmeier}</title>
+		<link rel="stylesheet" href="style.css"/>
 	</head>
 	<body>
-		<img
-			src="assets/images/ff6347-icon-512x512.webp"
-			alt="A square icon with rounded corners. Inside is a geometric design featuring a white square frame containing a black and gray diagonal split, with a smaller white square in the center where the diagonal lines meet."
-		/>
+		<header></header>
+		<main>
+				<h1>The Archives of Maddy Rethmeier</h1>
+					<nav class="nav">
+						<ul>
+							<a href="AnalogAlgorhythm.html">Analog Algorhythm</a>
+							<a href="Perspective.html">Perspective</a>
+							<a href="Interaction.html">Interaction</a>
+							<a href="Motion.html">Motion</a>
+							<a href="Blinkenlichten.html">Blinkenlichten</a>
+							<a href="Fazit.html">Fazit des Semesters</a>
+						</ul>
+
+					</nav>
 		<script src="index.js"></script>
+		<div id="backlink">
+			<style>
+				#backlink {
+					--color-accent: hsl(198, 100%, 50%);
+					position: absolute;
+					top: 8px;
+					right: 8px;
+					border: 1px dashed black;
+					background-color: white;
+					padding: 8px;
+					cursor: pointer;
+					color: black;
+					font-size: 0.8rem;
+					font-weight: bold;
+					transition: all 0.3s ease;
+					transform: rotate(-2deg) scale(0.9);
+					box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+					a {
+						text-decoration: none;
+						color: black;
+						color: inherit;
+						text-decoration: underline;
+						background-image: linear-gradient(to right,
+								var(--color-accent) 0%,
+								var(--color-accent) 100%);
+						background-size: 0% 100%;
+						background-position: left center;
+						background-repeat: no-repeat;
+						transition: background-size 0.2s ease-in-out;
+						padding: 0.5rem;
+					}
+					a:hover {
+						background-size: 100% 100%;
+						color: white;
+					}
+	
+				}
+				#backlink:hover {
+					transform: rotate(2deg) scale(1);
+				}
+			</style>
+			<a href="https://rundgang2025.qawsed.site">Back to the Rundgang 2025</a>
+		</div>
+	</main>
+	<footer>Arbeiten des WS 24/25 Grundlagen digitale Kommunikation</footer>
 	</body>
+	
 </html>
