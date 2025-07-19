@@ -34,7 +34,6 @@ body {
     background-color: rgb(168, 220, 238);
     font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
     font-weight: normal;
-    padding: 50px 0 0 0; /* Added padding-top to account for fixed backlink */
 }
 
 main {
@@ -104,45 +103,37 @@ footer {
 
 }
 
-/* Backlink styles identical to archive.html */
-#backlink-ecommerce {
-    width: 100%;
-    background-color: #74d1ff; /* Original background color for backlink */
-    padding: 10px 0;
-    color: white;
-    font-size: 1rem;
+#backlink-new-panel {
+    --color-accent: #3c55f8; /* Matches hover color of buttons */
+    border: 1px dashed #3c55f8; /* Matches border color */
+    background-color: #74d1ff; /* Matches button background */
+    padding: 8px;
+    cursor: pointer;
+    color: white; /* Text color */
+    font-size: 0.8rem;
     font-weight: bold;
+    transition: all 0.3s ease;
+    /* Removed: transform: rotate(-2deg) scale(0.9); */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
+    z-index: 10;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-    font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif; /* Original font family for backlink */
-    position: fixed; /* Pinned to viewport */
-    top: 0; /* Pinned to top */
-    left: 0; /* Pinned to left */
-    transform: none;
-    z-index: 1000; /* Ensure it's on top */
+    margin-bottom: 20px;
 }
-
-#backlink-ecommerce a {
+#backlink-new-panel a {
     text-decoration: none;
     color: inherit;
+    background-image: linear-gradient(to right,
+                      var(--color-accent) 0%,
+                      var(--color-accent) 100%);
+    background-size: 0% 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+    padding: 0.5rem;
     display: inline-block;
-    padding: 0 15px;
-    transition: background-color 0.3s ease;
 }
-
-#backlink-ecommerce a:hover {
-    background-color: #3c55f8; /* Original accent color for hover */
+#backlink-new-panel a:hover {
+    background-size: 100% 100%;
     color: white;
-}
-
-/* Responsive styling for mobile */
-@media (max-width: 768px) {
-    #backlink-ecommerce {
-        font-size: 1.1rem; /* Consistent with archive.html */
-        padding: 12px 0; /* Consistent with archive.html */
-    }
-    body {
-        padding-top: 60px; /* Adjust padding for smaller screens */
-    }
 }
