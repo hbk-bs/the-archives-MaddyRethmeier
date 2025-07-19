@@ -34,8 +34,8 @@ body {
     background-color: rgb(168, 220, 238);
     font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
     font-weight: normal;
-    /* Adjusted padding-top to account for fixed backlink AND safe area */
-    padding-top: calc(50px + env(safe-area-inset-top));
+    /* Basic padding for the fixed header */
+    padding-top: 50px; /* Base padding for main content below the backlink */
 }
 
 main {
@@ -122,10 +122,9 @@ footer {
     left: 0; /* Pinned to left */
     transform: none;
     z-index: 1000; /* Ensure it's on top */
-
-    /* Extend into safe area */
-    padding-top: calc(10px + env(safe-area-inset-top)); /* Add safe area to top padding */
-    height: calc(40px + env(safe-area-inset-top)); /* Adjust height to cover safe area */
+    /* Use safe-area-inset-top for true full-bleed background on some devices */
+    padding-top: calc(10px + env(safe-area-inset-top, 0px)); /* Add safe area to top padding */
+    height: calc(40px + env(safe-area-inset-top, 0px)); /* Adjust height to cover safe area */
     display: flex; /* Use flexbox to vertically center content */
     align-items: flex-end; /* Align content to the bottom of the padding */
     justify-content: center; /* Center horizontally */
@@ -148,10 +147,11 @@ footer {
 @media (max-width: 768px) {
     #backlink-ecommerce {
         font-size: 1.1rem; /* Consistent with archive.html */
-        padding-top: calc(12px + env(safe-area-inset-top)); /* Adjust padding for smaller screens */
-        height: calc(44px + env(safe-area-inset-top)); /* Adjust height for smaller screens */
+        padding-top: calc(12px + env(safe-area-inset-top, 0px)); /* Adjust padding for smaller screens */
+        height: calc(44px + env(safe-area-inset-top, 0px)); /* Adjust height for smaller screens */
     }
     body {
-        padding-top: calc(60px + env(safe-area-inset-top)); /* Adjust padding for smaller screens */
+        /* Adjust padding for smaller screens, accounting for safe area */
+        padding-top: calc(60px + env(safe-area-inset-top, 0px));
     }
 }
