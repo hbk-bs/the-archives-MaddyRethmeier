@@ -1,0 +1,29 @@
+/*To make a differentiating between qoute and text even more obvious*/
+blockquote {
+  font-style: italic;
+}
+
+body {
+	/*To create a natural border for pictures with a white background, also I like the color*/
+	background-color: lightcyan;
+
+	/*I just really like the font... but obviously it has to be adjusted depending on the website I want to create..*/
+	font-family: "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052,
+		serif;
+	font-weight: normal;
+}
+
+/* only use if I want a PPP like layout
+h1,
+h2,
+h3,
+h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}*/
+
+/*because I prefer my links to be displayed in dark blue if you hover above them (it is easier to see what you are selecting) ...*/
+a:hover {
+	color: darkblue;
+}
